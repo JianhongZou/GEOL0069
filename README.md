@@ -1,57 +1,55 @@
 # GEOL0069
-# Land Cover Classification over Guangzhou using Sentinel-2 and Machine Learning
+# Sentinel-2 Water Body Detection using NDWI, MNDWI, and K-means Clustering
 
-## 📌 Project Overview
+## Overview
 
-This project applies supervised machine learning methods to classify land cover types over the Guangzhou region in southern China using Sentinel-2 multispectral satellite imagery. The classification targets four key land cover categories:
+This project aims to detect and classify inland water bodies in China's **Yangtze River Delta (Poyang Lake)** and **Pearl River Delta (Zhujiang River)** regions using Sentinel-2 imagery. The workflow integrates spectral indices (NDWI, MNDWI) with unsupervised **K-means clustering** to improve water extraction accuracy.
 
-- Urban areas
-- Cropland
-- Forests
-- Water bodies
+## Objectives
 
-We use both Random Forest (RF) and Convolutional Neural Network (CNN) classifiers, trained on labeled image patches. The project includes IRIS-based manual annotations and evaluates model performance using accuracy metrics and visual inspection. Environmental impact of training is also assessed via `codecarbon`.
-
----
-
-## 🛰 Remote Sensing Background
-
-Sentinel-2 is a high-resolution multispectral optical imaging mission from the European Space Agency (ESA), providing 10–60m resolution imagery across 13 spectral bands. This project uses:
-
-- Bands: B2 (Blue), B3 (Green), B4 (Red), B8 (NIR)
-- Resolution: 10 meters
-- Date range: June–September 2023
-- Study area: 113.0°E to 113.7°E, 22.8°N to 23.6°N (Guangzhou & surroundings)
+- Extract surface water from Sentinel-2 images using NDWI and MNDWI
+- Apply K-means clustering on spectral bands and indices to classify water/non-water areas
+- Compare classification results with NDWI baseline masks
 
 ---
 
-## 🧠 Methodology
+## Data
 
-1. **Data Acquisition**  
-   Imagery was downloaded from Google Earth Engine and processed into `.tif` and `.npy` formats.
-
-2. **Labeling**  
-   Manual labels were created using the IRIS tool, providing ground truth masks for supervised learning.
-
-3. **Classification**  
-   Two models were implemented:
-   - **Random Forest** using scikit-learn
-   - **CNN** using TensorFlow/Keras
-
-4. **Visualization**  
-   Prediction results were visualized as color-coded land cover maps.
-
-5. **Model Evaluation**  
-   Accuracy, confusion matrix, and intersection-over-union (IoU) were used to compare performance.
-
-6. **Environmental Cost**  
-   CodeCarbon was used to assess the carbon footprint of model training.
+- **Satellite**: Sentinel-2 MSI Level-1C
+- **Bands used**:
+  - B3 (Green, 10m)
+  - B8 (NIR, 10m) – for NDWI
+  - B11 (SWIR, 20m resampled to 10m) – for MNDWI
+- **Regions of Interest**:
+  - Yangtze River Delta (Poyang Lake area)
+  - Pearl River Delta (Zhujiang / Guangzhou area)
 
 ---
 
-## 🧰 Dependencies & Environment
+## Methods
 
-Install required packages:
+### 1. **NDWI (Normalized Difference Water Index)**
+- Formula: `(Green - NIR) / (Green + NIR)`
+- Used to generate binary water masks (1 = water, 0 = non-water)
+
+### 2. **MNDWI (Modified NDWI)**
+- Formula: `(Green - SWIR) / (Green + SWIR)`
+- More effective in urban or turbid areas
+
+### 3. **K-means Clustering**
+- Applied to:
+  - Band combinations (e.g., Green + NIR or Green + SWIR)
+  - MNDWI values
+- Automatically labels pixels into water / non-water clusters
+- Post-processing step flips labels based on NIR or MNDWI statistics
+
+---
+
+## Structure
 
 ```bash
-pip install numpy rasterio gdal scikit-learn tensorflow codecarbon matplotlib
+├── data/                    # Sentinel-2 JP2 files
+├── scripts/                 # Jupyter Notebooks and Python scripts
+├── outputs/                 # Classification results and masks
+├── README.md
+
