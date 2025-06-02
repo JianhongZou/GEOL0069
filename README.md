@@ -65,7 +65,11 @@ All data are free and open-access, provided by the **European Space Agency (ESA)
 ![band](jpg/Sentinel2_bands.jpg)
 
 
-The datasets used for this project are in the folder **zhujiang** & **yangzijiang**
+The datasets used for this project can be find in with the name in [https://browser.dataspace.copernicus.eu](https://browser.dataspace.copernicus.eu)
+
+-**Zhujiang** *S2A_MSIL2A_20250415T030151_N0511_R032_T49QGF_20250415T095813.SAFE*
+
+-**Yangzijiang** *S2B_MSIL2A_20250512T023529_N0511_R089_T51RTQ_20250512T043829.SAFE*
 
 
 ---
