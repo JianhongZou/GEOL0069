@@ -88,6 +88,8 @@ $$
 - Automatically labels pixels into water / non-water clusters
 - Post-processing step flips labels based on NIR or MNDWI statistics
 
+![Kmean](jpg/061541499689107.gif)
+
 ---
 
 ## Structure
