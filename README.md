@@ -85,6 +85,8 @@ $$
 - Automatically labels pixels into water / non-water clusters
 - Post-processing step flips labels based on NIR or MNDWI statistics
 
+![band](jpg/Sentinel2_bands.png)
+
 ---
 
 ## Structure
