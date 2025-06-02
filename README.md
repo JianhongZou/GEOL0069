@@ -103,6 +103,8 @@ Project Link: https://github.com/JianhongZou/GEOL0069
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Acknowledgments
+This project was created for GEOL0069 at University College London, taught by Dr. Michel Tsamados and Weibin Chen.
 
 ## Reference
 
