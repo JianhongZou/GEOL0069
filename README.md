@@ -36,6 +36,8 @@ Sentinel-2 is a twin-satellite mission developed by the European Space Agency (E
 Sentinel-2 carries the **MultiSpectral Instrument (MSI)**, which captures images in 13 spectral bands ranging from visible to shortwave infrared (SWIR), with spatial resolutions of 10 m, 20 m, and 60 m depending on the band. This makes it particularly suitable for applications such as vegetation monitoring, land use classification, urban mapping, and surface water body detection.
 
 The availability of free and open-access data, frequent revisit times, and consistent spectral characteristics make Sentinel-2 an ideal data source for large-scale and time-sensitive remote sensing tasks.
+
+![sentinel-2](jpg/1783922-20200303201337695-982407785.png)
 ### 📦 Data Source 
 
 The Sentinel-2 satellite imagery used in this project was obtained from the  
@@ -48,7 +50,7 @@ The Sentinel-2 satellite imagery used in this project was obtained from the
 
 
 
-All data are free and open-access, provided by the **European Space Agency (ESA)** for scientific and operational use.
+All data are free and open-access, provided by the **European Space Agency (ESA)** for scientific and operational use. The datasets used for this project are Sentinel-2 L2A datasets.
 - **Bands used**:
   - B3 (Green, 10m)
   - B8 (NIR, 10m) – for NDWI
