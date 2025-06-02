@@ -1,9 +1,9 @@
-# GEOL0069
+# GEOL0069 AI4EO
 # Sentinel-2 Water Body Detection using NDWI, MNDWI, and K-means Clustering
 
 ## Overview
 
-This project aims to detect and classify inland water bodies in China's **Yangtze River Delta (Poyang Lake)** and **Pearl River Delta (Zhujiang River)** regions using Sentinel-2 imagery. The workflow integrates spectral indices (NDWI, MNDWI) with unsupervised **K-means clustering** to improve water extraction accuracy.
+This project aims to detect and classify inland water bodies in China's **Yangtze River Delta (Taihu Lake)** and **Pearl River Delta (Zhujiang River)** regions using Sentinel-2 imagery. The workflow integrates spectral indices (NDWI, MNDWI) with unsupervised **K-means clustering** to improve water extraction accuracy.
 
 ## Objectives
 
@@ -30,7 +30,7 @@ By comparing these two contrasting yet complementary regions, this study aims to
 ---
 ## Data
 
-### Satellite-Sentinel-2 MSI Level-1C
+### Satellite-Sentinel-2 MSI 
 Sentinel-2 is a twin-satellite mission developed by the European Space Agency (ESA) as part of the Copernicus Programme, aimed at providing high-resolution optical imagery for land monitoring. The mission consists of Sentinel-2A and Sentinel-2B, launched in 2015 and 2017 respectively, working in tandem to achieve a revisit time of 5 days at the equator.
 
 Sentinel-2 carries the **MultiSpectral Instrument (MSI)**, which captures images in 13 spectral bands ranging from visible to shortwave infrared (SWIR), with spatial resolutions of 10 m, 20 m, and 60 m depending on the band. This makes it particularly suitable for applications such as vegetation monitoring, land use classification, urban mapping, and surface water body detection.
@@ -40,6 +40,13 @@ The availability of free and open-access data, frequent revisit times, and consi
 
 The Sentinel-2 satellite imagery used in this project was obtained from the  
 **[Copernicus Open Access Hub](https://scihub.copernicus.eu/)**, the official data distribution platform under the European Union’s Copernicus Programme.
+
+| Name | High-level Description | Production & Distribution |Data Volume|
+|-----|-----|-----|-----|
+| Level-1C  | BTop-of-atmosphere reflectances in cartographic geometry     | Systematic generation and on-line distribution   |600 MB (each 100x100 km2)|
+| Level-2A  | Systematic generation and on-line distribution and generation on user side (using Sentinel-2 Toolbox)   | Systematic generation and on-line distribution and generation on user side (using Sentinel-2 Toolbox)   |800 MB (each 100x100 km2)
+
+
 
 All data are free and open-access, provided by the **European Space Agency (ESA)** for scientific and operational use.
 - **Bands used**:
@@ -55,11 +62,18 @@ All data are free and open-access, provided by the **European Space Agency (ESA)
 ## Methods
 
 ### 1. **NDWI (Normalized Difference Water Index)**
-- Formula: `(Green - NIR) / (Green + NIR)`
-- Used to generate binary water masks (1 = water, 0 = non-water)
+
+$$
+\text{NDWI} = \frac{\text{Green} - \text{NIR}}{\text{Green} + \text{NIR}}
+$$
+
+- Used to generate binary water masks 
 
 ### 2. **MNDWI (Modified NDWI)**
-- Formula: `(Green - SWIR) / (Green + SWIR)`
+$$
+\text{NDWI} = \frac{\text{Green} - \text{SWIR}}{\text{Green} + \text{SWIR}}
+$$
+
 - More effective in urban or turbid areas
 
 ### 3. **K-means Clustering**
