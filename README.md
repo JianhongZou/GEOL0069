@@ -60,7 +60,7 @@ All data are free and open-access, provided by the **European Space Agency (ESA)
   - Pearl River Delta (Zhujiang / Guangzhou area)
 
 
-![band](jpg/Sentinel2_bands.png)
+![band](jpg/Sentinel2_bands.jpg)
 
 ---
 
