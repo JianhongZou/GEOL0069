@@ -106,7 +106,7 @@ Project Link: 
 
 ## Reference
 
-**Instrument Payload*. (n.d.). Sentinel Online. https://sentinels.copernicus.eu*
+**Instrument Payload*. (n.d.). Sentinel Online. [https://sentinels.copernicus.eu](https://sentiwiki.copernicus.eu/web/sentinel-2)*
 
 *Unsupervised Learning — GEOL0069 Guide Book*. (n.d.). https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1%3AUnsupervised_Learning_Methods.html
 
