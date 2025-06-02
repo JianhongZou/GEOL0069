@@ -56,8 +56,8 @@ All data are free and open-access, provided by the **European Space Agency (ESA)
   - B8 (NIR, 10m) – for NDWI
   - B11 (SWIR, 20m resampled to 10m) – for MNDWI
 - **Regions of Interest**:
-  - Yangtze River Delta (Poyang Lake area)
-  - Pearl River Delta (Zhujiang / Guangzhou area)
+  - Yangtze River Delta (Taihu Lake area)
+  - Pearl River Delta (Zhujiang river / Guangzhou area)
 
 
 ![band](jpg/Sentinel2_bands.jpg)
