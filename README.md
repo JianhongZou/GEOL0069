@@ -95,5 +95,21 @@ MNDWI (Modified NDWI), proposed by Xu (2006), replaces the NIR band with shortwa
 ![Kmean](jpg/061541499689107.gif)
 
 ---
+# Contact
+
+Jianhong Zou - [zcfbjzo@ucl.ac.uk](zcfbjzo@ucl.ac.uk) 
+
+Project Link: 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## Reference
+
+**Instrument Payload*. (n.d.). Sentinel Online. https://sentinels.copernicus.eu*
+
+*Unsupervised Learning — GEOL0069 Guide Book*. (n.d.). https://cpomucl.github.io/GEOL0069-AI4EO/Chapter1%3AUnsupervised_Learning_Methods.html
+
+*McFeeters, S. K. (1996). The use of the Normalized Difference Water Index (NDWI) in the delineation of open water features. International Journal of Remote Sensing, 17(7), 1425–1432.*
+
+*Xu, H. (2006). Modification of normalized difference water index (NDWI) to enhance open water features in remotely sensed imagery. International Journal of Remote Sensing, 27(14), 3025–3033.*
