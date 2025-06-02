@@ -59,6 +59,9 @@ All data are free and open-access, provided by the **European Space Agency (ESA)
   - Yangtze River Delta (Poyang Lake area)
   - Pearl River Delta (Zhujiang / Guangzhou area)
 
+
+![band](jpg/Sentinel2_bands.png)
+
 ---
 
 ## Methods
@@ -84,8 +87,6 @@ $$
   - MNDWI values
 - Automatically labels pixels into water / non-water clusters
 - Post-processing step flips labels based on NIR or MNDWI statistics
-
-![band](jpg/Sentinel2_bands.png)
 
 ---
 
