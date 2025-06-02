@@ -23,6 +23,8 @@ This project explores a combined approach using spectral indices **(NDWI, MNDWI)
 ### Region chosen reason
 The Yangtze River Delta and the Pearl River Delta were selected as study areas due to their ecological, hydrological, and socio-economic significance. Both regions are characterized by dense river networks, extensive floodplains, and seasonal water fluctuations. They also represent typical examples of urban–water interface zones where human activities strongly interact with natural water systems.
 
+![MAP](jpg/map1.jpg)
+
 The Yangtze River Delta (including areas like **Taihu Lake**) is one of the China’s largest freshwater lake region and plays a key role in flood control and biodiversity conservation. Meanwhile, the Pearl River Delta (including the **Southern parts of Guangzhou**) is one of the most economically developed and urbanized zones in China, where urban expansion often threatens natural wetlands.
 
 By comparing these two contrasting yet complementary regions, this study aims to assess the robustness and adaptability of water detection methods across varying land use types, vegetation cover, and water body characteristics.
