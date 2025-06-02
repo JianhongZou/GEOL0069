@@ -92,11 +92,4 @@ $$
 
 ---
 
-## Structure
-
-```bash
-├── data/                    # Sentinel-2 JP2 files
-├── scripts/                 # Jupyter Notebooks and Python scripts
-├── outputs/                 # Classification results and masks
-├── README.md
-
+## Reference
