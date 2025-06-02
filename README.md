@@ -99,7 +99,7 @@ MNDWI (Modified NDWI), proposed by Xu (2006), replaces the NIR band with shortwa
 
 Jianhong Zou - [zcfbjzo@ucl.ac.uk](zcfbjzo@ucl.ac.uk) 
 
-Project Link: 
+Project Link: https://github.com/JianhongZou/GEOL0069
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
