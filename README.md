@@ -74,6 +74,7 @@ $$
 \text{NDWI} = \frac{\text{Green} - \text{NIR}}{\text{Green} + \text{NIR}}
 $$
 
+NDWI (Normalized Difference Water Index) enhances water features by comparing reflectance in the green and near-infrared (NIR) bands. It was introduced by McFeeters (1996) to distinguish water from vegetation and soil.
 - Used to generate binary water masks 
 
 ### 2. **MNDWI (Modified NDWI)**
@@ -81,6 +82,7 @@ $$
 \text{NDWI} = \frac{\text{Green} - \text{SWIR}}{\text{Green} + \text{SWIR}}
 $$
 
+MNDWI (Modified NDWI), proposed by Xu (2006), replaces the NIR band with shortwave infrared (SWIR), making it more effective for detecting water in urban or turbid environments.
 - More effective in urban or turbid areas
 
 ### 3. **K-means Clustering**
