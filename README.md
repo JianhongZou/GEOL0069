@@ -64,6 +64,10 @@ All data are free and open-access, provided by the **European Space Agency (ESA)
 
 ![band](jpg/Sentinel2_bands.jpg)
 
+
+The datasets used for this project are in the **folder_data**
+
+
 ---
 
 ## Methods
