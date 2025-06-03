@@ -87,7 +87,7 @@ NDWI (Normalized Difference Water Index) enhances water features by comparing re
 
 ### 2. **MNDWI (Modified NDWI)**
 $$
-\text{NDWI} = \frac{\text{Green} - \text{SWIR}}{\text{Green} + \text{SWIR}}
+\text{MNDWI} = \frac{\text{Green} - \text{SWIR}}{\text{Green} + \text{SWIR}}
 $$
 
 MNDWI (Modified NDWI), proposed by Xu (2006), replaces the NIR band with shortwave infrared (SWIR), making it more effective for detecting water in urban or turbid environments.
